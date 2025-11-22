@@ -4,11 +4,11 @@ import { Linkedin, Facebook, Twitter } from "lucide-react";
 
 export default function Footer() {
     return (
-        <footer id="contact" className="bg-slate-950 text-white py-16 px-6">
+        <footer id="" className="bg-[#030304] text-white py-16 px-6">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
                 {/* Brand */}
                 <div>
-                    <h2 className="text-2xl font-bold mb-3">RETENTION_Hub</h2>
+                    <h2 className="text-2xl font-bold mb-3 text-transparent bg-clip-text bg-gradient-to-b from-[#d5d9e5] to-[#8c92a3]">RETENTION_Hub</h2>
                     <p className="text-slate-400">
                         Dedicated Retention Services for iGaming Operators Worldwide
                     </p>
@@ -16,7 +16,7 @@ export default function Footer() {
 
                 {/* Permalinks */}
                 <div>
-                    <h3 className="text-xl font-semibold mb-4">Permalinks</h3>
+                    <h3 className="text-xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-b from-[#d5d9e5] to-[#8c92a3]">Permalinks</h3>
                     <ul className="space-y-2 text-slate-300">
                         <li>
                             <a href="#what-we-offer" className="hover:text-purple-400 transition">
@@ -53,7 +53,7 @@ export default function Footer() {
 
                 {/* Privacy / Policies */}
                 <div>
-                    <h3 className="text-xl font-semibold mb-4">Privacy & Policies</h3>
+                    <h3 className="text-xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-b from-[#d5d9e5] to-[#8c92a3]">Privacy & Policies</h3>
                     <ul className="space-y-2 text-slate-300">
                         <li>
                             <a href="#privacy" className="hover:text-purple-400 transition">
@@ -75,9 +75,9 @@ export default function Footer() {
 
                 {/* Contact */}
                 <div>
-                    <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
+                    <h3 className="text-xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-b from-[#d5d9e5] to-[#8c92a3]">Contact Us</h3>
                     <p className="text-slate-300 mb-2">+374 99452772</p>
-                    <p className="text-slate-300 mb-4">Contact@igtrm.com</p>
+                    <p className="text-slate-300 mb-4">areg@igtrm.com</p>
                     <div className="flex gap-4">
                         <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hover:text-purple-400 transition">
                             <Linkedin size={24} />

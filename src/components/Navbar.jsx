@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import LogoDark from "../../public/images/logodark.jpg";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -15,8 +17,8 @@ export default function Navbar() {
 
   const links = [
     { name: "Home", href: "home" },
-    { name: "What We Offer", href: "offers" },
-    { name: "How We Help", href: "use-cases" },
+    { name: "Description", href: "description" },
+    { name: "About Us", href: "about-us" },
     { name: "FAQ", href: "faq" },
     { name: "Contact", href: "contact" },
   ];
@@ -26,24 +28,27 @@ export default function Navbar() {
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    setMobileOpen(false); // close mobile menu
+    setMobileOpen(false);
   };
 
   return (
     <nav
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled
-          ? "bg-black/70 backdrop-blur-md shadow-lg py-2"
-          : "bg-black/30 backdrop-blur-md py-4"
+        ? "bg-black/70 backdrop-blur-md shadow-lg py-2"
+        : "bg-black/30 backdrop-blur-md py-4"
         }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <a href="#" onClick={() => handleScroll("home")} className="flex items-center gap-2">
-          <div className="w-9 h-9 flex items-center justify-center rounded-md bg-gradient-to-br from-purple-500 to-blue-400 font-bold text-black">
-            RH
+        <a href="#" onClick={() => handleScroll("home")}>
+          <div className="w-24 h-24 relative">
+            <Image
+              src={LogoDark}
+              alt="RetentionHub Logo"
+              fill
+              className="rounded-md object-cover"
+              sizes="100%"
+            />
           </div>
-          <span className="text-white font-medium drop-shadow-lg">
-            RetentionHub
-          </span>
         </a>
         <div className="hidden md:flex items-center gap-6">
           {links.map((link) => (
