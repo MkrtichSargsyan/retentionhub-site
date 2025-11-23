@@ -37,7 +37,7 @@ export default function WhyChooseUs() {
     return (
         <section
             id="why-choose-us"
-            className="relative bg-[#0c0c0f] text-white py-28 px-6 overflow-visible scroll-m-24"
+            className="relative bg-[#0c0c0f] text-white py-28 px-6 overflow-visible scroll-m-24 overflow-hidden"
         >
             {/* ===== Background blobs ===== */}
             <motion.div

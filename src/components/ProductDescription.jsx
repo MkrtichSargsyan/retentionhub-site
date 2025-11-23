@@ -65,7 +65,7 @@ const features = [
 
 export default function ProductDescription() {
   return (
-    <section id="description" className="relative bg-[#0c0c0f] text-white py-20 px-6 overflow-visible scroll-m-24">
+    <section id="description" className="relative bg-[#0c0c0f] text-white py-20 px-6 overflow-hidden scroll-m-24">
 
       {/* ===== Background blobs ===== */}
       <motion.div

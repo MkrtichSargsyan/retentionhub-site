@@ -14,7 +14,7 @@ const results = [
 
 export default function ResultsForClients() {
   return (
-    <section className="relative bg-[#0c0c0f] text-white py-28 px-6">
+    <section className="relative bg-[#0c0c0f] text-white py-28 px-6 overflow-hidden">
       {/* Halo Gradient */}
       <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
         <div className="absolute top-1/2 left-1/2 w-[700px] h-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-tr from-purple-600/20 via-indigo-700/20 to-blue-800/10 blur-3xl"></div>
