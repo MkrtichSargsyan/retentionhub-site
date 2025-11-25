@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <section
             id="home"
-            className="relative pt-60 flex flex-col items-center justify-center bg-[#0f1117] overflow-visible scroll-m-24"
+            className="relative pt-60 flex flex-col items-center justify-center bg-[#0f1117] overflow-hidden scroll-m-24"
         >
 
             {/* === Blob Layer === */}

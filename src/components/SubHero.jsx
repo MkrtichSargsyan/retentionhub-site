@@ -36,7 +36,7 @@ export default function SubHero() {
     ];
 
     return (
-        <section className="relative w-full overflow-visible bg-[#0f1117]" id="what-we-offer">
+        <section className="relative w-full overflow-hidden bg-[#0f1117]" id="what-we-offer">
 
             {/* ===== Floating animated blobs ===== */}
             <motion.div

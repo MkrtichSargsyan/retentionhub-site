@@ -93,7 +93,7 @@ export default function ContactUs() {
     <section
       ref={vantaRef}
       id="contact"
-      className="relative w-full py-24 md:py-36 flex items-center justify-center text-white scroll-mt-18 min-h-[calc(100vh-4rem)]"
+      className="relative w-full py-24 md:py-36 flex items-center justify-center text-white scroll-mt-18 min-h-[calc(100vh-4rem)] overflow-hidden"
     >
       <div className="absolute inset-0 bg-black/70 z-1 pointer-events-none"></div>
 
