@@ -4,55 +4,49 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
-    {
-        question: "Why RETENTION_Hub?",
-        answer: `Running an iGaming business is so specific a job, the one where real money pulsates every second. And the most expensive thing is the Customer. You spent so much on affiliates and marketing, and, given the industry is so competitive, they jump to another operator after just a couple of days. That's why Retention is so important, as well as fine-tuning all the settings both on your platform and on your providers' side. We guarantee that your Customers' average lifetime will raise from 50 to 120% - that's exactly what has happened with all the operators we are working with.`,
-    },
-    {
-        question: "Revenue share, fixed fee or both?",
-        answer: `We are flexible enough with all kind of models. Our biggest partners usually chose fixed fee, mid-size sportsbooks prefer revshare, but it's up to you and us to discuss what is the best for both parties.`,
-    },
-    {
-        question: "What if I want to start an iGaming business from scratch?",
-        answer: `We are here to help. It's a huge challenge and will take time, but we will make sure you start a perfectly fine-tuned turnkey business. We will be next to you since then!`,
-    },
-    {
-        question: "We are unhappy with our current platform. Can we change it?",
-        answer: `Yes, we have done it for many our partners, but please mind that it is quite a complicated process. Changing a platform is like a divorce! But in the end, we will make sure it goes as painless as possible. The good news is we never charge for migrations!`,
-    },
-    {
-        question: "We are an existing Casino. How can you help us?",
-        answer: `Casino also requires a lot of Risk Management job. Besides, we can do your platform due diligence to help you with some wise suggestions. We can also help you to enlarge your business, adding sportsbook, games, etc.`,
-    },
-    {
-        question: "Is it important on which market we are operating?",
-        answer: `We work worldwide, and we know well all types of customers, no matter on which market you operate. Asia and Latin America, Eastern and Western Europe, Africa and Australia - if I wanted to visit all our partners, it would be a trip all around the globe!`,
-    },
-    {
-        question: "Are you familiar with the platform we operate on?",
-        answer: `Well, during a decade we exist, we have worked with more than 30 different sportsbook platforms. So the answer is probably yes. But, even if we have never dealt with your platform, it won't take long to get used to it, as the basic functionalities of all platforms are more or less the same.`,
-    },
-    {
-        question: "Will we have our dedicated trading and development team?",
-        answer: `All of our partners have their respective dedicated trading teams, no trader works for two partners at the same time. As for the Developers, it depends on the tasks they will develop.`,
-    },
-    {
-        question: "How secure our data will be?",
-        answer: `100% secure. We sign all kinds of NDAs necessary. No data shared with us has never been available to any third party, neither has any report or any other information. In fact, we always require only the minimum access to your systems, providing they have that functionality. No, we don't need any non-trading data about your business to do our job.`,
-    },
-    {
-        question: "We are a platform, how can we co-operate?",
-        answer: `Sure we can. If you provide your product to many sportsbooks and we can operate from a single platform, it's a win-win. Besides, we can handle everything between us two, without the operator. We have had - and still have - a few such cases.`,
-    },
-    {
-        question: "Can we use just one of your services?",
-        answer: `Yes you can! In fact, that's how we started with many of our partners. They ordered just one service, and later switched on the other. So don't hesitate to let us know what exactly bothers you more.`,
-    },
-    {
-        question: "We suffer with our marketing efficiency, what are the solutions here?",
-        answer: `Full due diligence of your platform, aportsbook/casino strategies and marketing activities are must. Marketing is never a stand-alone operation, sometimes making small changes in just a few settings gives an unexpected boost. Let's try!`,
-    },
+  {
+    question: "How does RETENTION HUB improve player retention?",
+    answer: `We analyze your platform and player behavior to identify churn risks and optimize engagement. By adjusting game settings, bonuses, and communication strategies, we significantly extend player lifetime and boost revenue.`,
+  },
+  {
+    question: "Do you support both sportsbooks and casinos?",
+    answer: `Yes. Our expertise spans sportsbooks, online casinos, and hybrid platforms. We help you optimize retention, risk management, and overall performance regardless of your vertical.`,
+  },
+  {
+    question: "Can you help us migrate to a better platform?",
+    answer: `Absolutely. Platform migration is complex, but we’ve done it for many partners. We ensure a smooth transition with zero downtime and minimal disruption to your operations.`,
+  },
+  {
+    question: "What kind of team will we have access to?",
+    answer: `You get a dedicated team of traders and developers assigned specifically to your business. No one works for multiple partners simultaneously, ensuring focus and accountability.`,
+  },
+  {
+    question: "How quickly can we see results?",
+    answer: `While results vary depending on your platform and market, most partners notice measurable improvements in retention, engagement, and revenue within the first few weeks.`,
+  },
+  {
+    question: "Is our data safe with RETENTION_Hub?",
+    answer: `100% secure. All operations comply with strict NDA protocols. We only access essential data needed to optimize your platform, and no sensitive information is ever shared.`,
+  },
+  {
+    question: "Do you work with new operators or only established ones?",
+    answer: `We work with both. Whether you’re launching a new iGaming business or improving an existing one, we provide end-to-end guidance and optimization services.`,
+  },
+  {
+    question: "Can we choose only specific services?",
+    answer: `Yes. You can select individual services, such as risk management, retention strategy, or platform optimization. Many partners start small and expand as needed.`,
+  },
+  {
+    question: "Do you adapt your strategies based on different markets?",
+    answer: `Absolutely. We analyze player behavior and market trends for each region—Asia, Europe, Latin America, Africa, and Australia—to maximize retention and revenue.`,
+  },
+  {
+    question: "What sets RETENTION_Hub apart from other service providers?",
+    answer: `Unlike generic providers, we specialize in retention-driven strategies tailored for the iGaming industry. Our data-driven approach guarantees measurable improvements and long-term growth for your business.`,
+  },
 ];
+
+
 
 export default function FAQ() {
     const [openIndex, setOpenIndex] = useState(null);
