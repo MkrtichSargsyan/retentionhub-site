@@ -65,7 +65,7 @@ export default function Navbar() {
         {/* Logo */}
         <motion.div
           className="relative w-20 h-20 md:w-24 md:h-24 flex-shrink-0 overflow-hidden rounded-xl"
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.01 }}
         >
           <Image
             src={LogoDark}
