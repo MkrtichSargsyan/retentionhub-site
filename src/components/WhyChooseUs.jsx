@@ -6,29 +6,29 @@ const features = [
     {
         title: "Data-Driven Approach",
         description:
-            "We don’t guess. We calculate. Every strategy is backed by real behavioral data.",
+            "We don’t guess. We calculate. Every strategy is backed by real behavioral data",
         icon: "📊",
     },
     {
         title: "Fast Results",
-        description: "Most clients see uplift in 7–14 days.",
+        description: "Most clients see uplift in 7–14 days",
         icon: "⚡",
     },
     {
         title: "Transparent Pricing",
-        description: "Clear, fixed monthly packages without hidden fees.",
+        description: "Clear, fixed monthly packages without hidden fees",
         icon: "💎",
     },
     {
         title: "Global Expertise",
         description:
-            "We work with operators in 20+ countries — Sportsbook & Casino.",
+            "We work with operators in 40+ countries",
         icon: "🌍",
     },
     {
         title: "Customized Solutions",
         description:
-            "No generic templates. Your product, your audience, your strategy.",
+            "No generic templates. Your product, your audience, your strategy",
         icon: "🛠️",
     },
 ];
@@ -37,7 +37,7 @@ export default function WhyChooseUs() {
     return (
         <section
             id="why-choose-us"
-            className="relative bg-[#0c0c0f] text-white py-28 px-6 overflow-visible scroll-m-24 overflow-hidden"
+            className="relative  bg-[#0f1117] text-white py-28 px-6 overflow-visible scroll-m-24 overflow-hidden"
         >
             {/* ===== Background blobs ===== */}
             <motion.div
@@ -132,7 +132,7 @@ export default function WhyChooseUs() {
                                 >
                                     {item.title}
                                 </h3>
-                                <p className="text-slate-300 text-lg">{item.description}</p>
+                                <p className="text-slate-300 text-xl">{item.description}</p>
                             </div>
                         </motion.div>
                     );

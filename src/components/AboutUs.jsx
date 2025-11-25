@@ -21,7 +21,7 @@ export default function AboutUs() {
     return (
         <section
             id="about-us"
-            className="relative w-full bg-[#0c0c0f] text-white py-32 overflow-hidden scroll-m-24"
+            className="relative w-full  bg-[#0f1117] text-white py-32 overflow-hidden scroll-m-24"
         >
             {/* ===== Floating Particles ===== */}
             <div className="absolute inset-0 pointer-events-none">

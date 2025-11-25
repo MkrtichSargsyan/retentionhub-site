@@ -36,16 +36,21 @@ export default function SubHero() {
     ];
 
     return (
-        <section className="relative w-full overflow-visible bg-[#0c0c0f]">
+        <section className="relative w-full overflow-visible bg-[#0f1117]" id="what-we-offer">
+
             {/* ===== Floating animated blobs ===== */}
             <motion.div
-                className="absolute top-80 left-10 w-72 h-72 bg-gradient-to-r from-purple-600/30 to-indigo-400/30 rounded-full filter blur-3xl animate-blob overflow-hidden"
+                className="absolute top-80 left-10 w-72 h-72 
+                bg-gradient-to-r from-purple-500/30 to-indigo-300/30 
+                rounded-full blur-3xl"
                 animate={{ y: [0, 20, 0], x: [0, 40, 0] }}
                 transition={{ duration: 12, repeat: Infinity, repeatType: "mirror" }}
             />
 
             <motion.div
-                className="absolute bottom-20 right-1/3 w-96 h-96 bg-gradient-to-r from-pink-500/20 to-yellow-400/20 rounded-full filter blur-3xl animate-blob overflow-hidden"
+                className="absolute bottom-20 right-1/3 w-96 h-96 
+                bg-gradient-to-r from-pink-400/25 to-yellow-300/25 
+                rounded-full blur-3xl"
                 animate={{ y: [0, -30, 0], x: [0, -20, 0] }}
                 transition={{ duration: 14, repeat: Infinity, repeatType: "mirror" }}
             />
@@ -55,11 +60,11 @@ export default function SubHero() {
                 {[...Array(15)].map((_, i) => (
                     <motion.div
                         key={i}
-                        className="absolute w-[2px] h-[2px] bg-white/20 rounded-full"
+                        className="absolute w-[2px] h-[2px] bg-white/40 rounded-full"
                         animate={{
                             x: [0, Math.random() * 30 - 15, 0],
                             y: [0, Math.random() * 30 - 15, 0],
-                            opacity: [0.2, 0.8, 0.2]
+                            opacity: [0.3, 1, 0.3]
                         }}
                         transition={{
                             duration: Math.random() * 6 + 4,
@@ -76,7 +81,7 @@ export default function SubHero() {
             </div>
 
             <motion.div
-                className="relative z-10 max-w-5xl mx-auto px-6 py-32 space-y-24 overflow-hidden"
+                className="relative z-10 max-w-5xl mx-auto px-6 py-32 space-y-24"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
@@ -84,8 +89,9 @@ export default function SubHero() {
                 {/* ===== Main Title ===== */}
                 <motion.h2
                     className="text-5xl md:text-6xl font-extrabold tracking-tight text-center
-                        text-transparent bg-clip-text bg-gradient-to-b from-[#d5d9e5] to-[#8c92a3]
-                        drop-shadow-[0_10px_30px_rgba(255,255,255,0.15)]"
+                    text-transparent bg-clip-text
+                    bg-gradient-to-b from-[#e4e7f0] to-[#aab0c0]
+                    drop-shadow-[0_10px_30px_rgba(255,255,255,0.15)]"
                     initial={{ y: 40, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.1 }}
@@ -94,14 +100,18 @@ export default function SubHero() {
                 </motion.h2>
 
                 <motion.p
-                    className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed text-center drop-shadow-[0_0_12px_rgba(255,255,255,0.1)]"
+                    className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto 
+                    leading-relaxed text-center
+                    drop-shadow-[0_0_16px_rgba(255,255,255,0.1)]"
                     initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.3 }}
                 >
-                    iGaming retention is no longer optional. With acquisition costs rising globally, operators rely on retention strategies that keep players active, engaged, and profitable.
+                    iGaming retention is no longer optional. With acquisition costs rising globally,
+                    operators rely on retention strategies that keep players active, engaged, and profitable.
                     <br />
-                    We use behavioral segmentation, churn prediction, smart limits, and AI-driven player profiling to increase LTV and maximize ROI.
+                    We use behavioral segmentation, churn prediction, smart limits, and AI-driven profiling
+                    to increase LTV and maximize ROI.
                 </motion.p>
 
                 {/* ===== Features ===== */}
@@ -117,13 +127,16 @@ export default function SubHero() {
                     {features.map((item, idx) => (
                         <motion.p
                             key={idx}
-                            className="flex items-center gap-3 text-gray-400 text-lg"
+                            className="flex items-center gap-3 text-gray-300 text-xl"
                             variants={{
                                 hidden: { opacity: 0, x: -20 },
                                 visible: { opacity: 1, x: 0 }
                             }}
                         >
-                            <span className="w-2 h-2 bg-gradient-to-r from-[#f1dd9b] via-[#d9c271] to-[#f1dd9b] rounded-full inline-block"></span>
+                            <span
+                                className="w-2 h-2 rounded-full 
+                                bg-gradient-to-r from-[#ffe6a8] via-[#d9c271] to-[#ffe6a8]"
+                            ></span>
                             {item}
                         </motion.p>
                     ))}
@@ -140,17 +153,29 @@ export default function SubHero() {
                     }}
                 >
                     {services.map((service, idx) => (
-                        <motion.div key={idx} variants={{
-                            hidden: { opacity: 0, y: 20 },
-                            visible: { opacity: 1, y: 0 }
-                        }}>
-                            <h3 className="text-2xl md:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-b from-[#d5d9e5] to-[#8c92a3] drop-shadow-[0_5px_20px_rgba(255,255,255,0.1)]">
+                        <motion.div
+                            key={idx}
+                            variants={{
+                                hidden: { opacity: 0, y: 20 },
+                                visible: { opacity: 1, y: 0 }
+                            }}
+                        >
+                            <h3
+                                className="text-2xl md:text-3xl font-semibold 
+                                text-transparent bg-clip-text
+                                bg-gradient-to-b from-[#e4e7f0] to-[#aab0c0]
+                                drop-shadow-[0_5px_20px_rgba(255,255,255,0.1)]"
+                            >
                                 {service.title}
                             </h3>
-                            <p className="text-gray-300 text-lg leading-relaxed">{service.description}</p>
+
+                            <p className="text-gray-300 text-xl leading-relaxed">
+                                {service.description}
+                            </p>
                         </motion.div>
                     ))}
                 </motion.div>
+
             </motion.div>
         </section>
     );

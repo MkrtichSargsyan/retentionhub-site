@@ -59,7 +59,7 @@ export default function FAQ() {
     const toggle = (idx) => setOpenIndex(openIndex === idx ? null : idx);
 
     return (
-        <section id="faq" className="relative bg-[#0c0c0f] text-white py-28 px-6 overflow-hidden scroll-m-24">
+        <section id="faq" className="relative  bg-[#0f1117] text-white py-28 px-6 overflow-hidden scroll-m-24">
             {/* ===== Background blobs ===== */}
             <motion.div
                 className="absolute top-80 left-10 w-64 h-64 rounded-full bg-purple-600/20 filter blur-3xl pointer-events-none"

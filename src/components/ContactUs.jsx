@@ -68,14 +68,14 @@ export default function ContactUs() {
 
     emailjs
       .send(
-        "service_o672rk2",
-        "template_2maghla",
+        "service_3nwhhjf",
+        "template_9h86ocd",
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
         },
-        "McIT-1Z8Ib_vVif9Y"
+        "N5_RQb05GreAWjcpE"
       )
       .then(
         () => {
@@ -148,7 +148,7 @@ export default function ContactUs() {
 
             <button
               type="submit"
-              className="w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-700 hover:from-blue-500 hover:to-purple-600 transition font-bold shadow-lg text-white text-base mt-auto"
+              className="w-full py-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-700 hover:from-blue-500 hover:to-purple-600 transition font-bold shadow-lg text-white text-xl mt-auto"
             >
               Send Message
             </button>
