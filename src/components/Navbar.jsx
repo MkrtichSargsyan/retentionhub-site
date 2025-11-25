@@ -18,6 +18,10 @@ export default function Navbar() {
     { name: "Contact", href: "contact" },
   ];
 
+  // Elegant gradient for underline
+  const elegantGradient = "bg-gradient-to-r from-purple-800 via-indigo-700 to-fuchsia-600";
+
+  // Scroll listener
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 24);
@@ -26,7 +30,7 @@ export default function Navbar() {
       links.forEach((link) => {
         const section = document.getElementById(link.href);
         if (section) {
-          const top = section.offsetTop - 90; // header height offset
+          const top = section.offsetTop - 100; // navbar height offset
           if (window.scrollY >= top) current = link.href;
         }
       });
@@ -40,15 +44,17 @@ export default function Navbar() {
   const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      const headerOffset = 80; // navbar height
+      const headerOffset = 100; // navbar height
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - headerOffset;
-      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-    }
-    setMobileOpen(false);
-  };
 
-  const elegantGradient = "bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400";
+      // Close mobile menu first, then scroll
+      setMobileOpen(false);
+      setTimeout(() => {
+        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+      }, 50);
+    }
+  };
 
   return (
     <nav className="fixed top-0 inset-x-0 z-50">
@@ -78,7 +84,6 @@ export default function Navbar() {
               whileHover={{ scale: 1.05 }}
             >
               {link.name}
-              {/* Elegant underline */}
               {activeSection === link.href && (
                 <motion.span
                   layoutId="underline"
@@ -135,7 +140,6 @@ export default function Navbar() {
                   whileHover={{ scale: 1.03 }}
                 >
                   {link.name}
-                  {/* Optional elegant underline on mobile */}
                   {activeSection === link.href && (
                     <span className={`block mt-1 h-1 w-full rounded-lg ${elegantGradient}`} />
                   )}
